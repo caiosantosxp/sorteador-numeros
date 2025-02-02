@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estrela do Amanhã</title>
+
+  <link rel="stylesheet" href="styles/index.css" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <img src="/assets/logo.svg" alt="">
+    <h1>NUMBERS</h1>
+  </header>
+
+  <main>
+    <div class="title">
+        <h3>Online - gratuito</h3>
+        <h1 class="main-title">Sorteador de números</h1>
+    </div>
+      
+    <div class="main-container sorteio " >
+          <div>
+            <h1>Quero sortear:</h1>
+            <p>Defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!</p>
+          </div>
+
+          <div class="sorteador">
+            
+            <div class="sorteador-container">
+              <h1>Números</h1>
+              <div class="input-container">
+                <input type="text" value="1"  name="" id="quantity-number" >
+              </div>
+            </div>
+    
+            <div class="sorteador-container">
+              <h1>de</h1>
+              <div class="input-container">
+                <input type="text" value="1"  name="" id="start-number">
+              </div>
+            </div>
+    
+            <div class="sorteador-container">
+              <h1>de</h1>
+              <div class="input-container">
+                <input type="text" value="100"  name="" id="end-number" >
+              </div>
+            </div>
+            
+          </div>
+          
+          <div class="checkbox-container">
+            <label for="no-repeat">
+              <input type="checkbox" name="type-number" id="no-repeat" checked>
+              <span class="check"></span>
+            </label>
+            <p>Repetir números?</p>
+          </div>
+
+          <div class="button-container">
+            <button id="send-button">
+              Sortear 
+              <img src="/assets/Seta.svg" alt="">
+            </button>
+          </div>
+    </div>
+
+    <div class="main-container result hidden">
+      <div class="results">
+          
+          <header >
+            <h1>Resultado do sorteio</h1>
+            <p>
+              <span>1</span>
+              º resultado
+            </p>
+          </header>
+  
+          <div class="resultados">
+          </div>
+      </div>
+
+      <div class="button-try">
+          <button id="try-button">
+            Sortear Novamente
+            <img src="/assets/try.svg" alt="">
+          </button>
+      </div>
+    </div>
+
+    <div class="secondary-container">
+
+          <div class="box">
+            <img src="/assets/user-chat.svg" alt="">
+            <div>
+              <h1>Como funciona o sorteador de números?</h1>
+              <p>O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo especificado pelo usuário.</p>
+            </div>
+          </div>
+  
+          <div class="box">
+            <img src="/assets/user-chat.svg" alt="">
+            <div>
+              <h1>Posso escolher o intervalo dos números?</h1>
+              <p>Sim, você pode definir os valores mínimo e máximo para o intervalo dos números sorteados.</p>
+            </div>
+          </div>
+
+    </div>
+
+  </main>
+  
+  <script src="scripts/index.js"></script>
+</body>
+</html>

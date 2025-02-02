@@ -1,0 +1,40 @@
+.secondary-container {
+  grid-area: c;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  margin-top: 2rem;
+  
+  & .box {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: start;
+
+  }
+
+  h1 {
+    font-family: 'Roboto Flex';
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.5;
+
+    color: var(--content-brand);
+  }
+
+  p {
+    font-family: 'Roboto Flex';
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: var(--content-secondary);
+
+    max-width: 358px;
+  }
+
+  .content-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
